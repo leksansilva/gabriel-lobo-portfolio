@@ -1,0 +1,18 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "cva",
+    "cx",
+    "cn",
+    "twMerge",
+    ".*Styles.*",
+    ".*Variants.*",
+    ".*ClassName.*"
+  ]
+}

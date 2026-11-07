@@ -1,0 +1,10 @@
+export { default as HeroSection } from './hero-section';
+export { default as PillarsSection } from './pillars-section';
+export { default as PainPointsSection } from './pain-points-section';
+export { default as HowItWorksSection } from './how-it-works-section';
+export { default as PlansSection } from './plans-section';
+export { default as AboutSection } from './about-section';
+export { default as TestimonialsSection } from './testimonials-section';
+export { default as FaqSection } from './faq-section';
+export { default as ScheduleSection } from './schedule-section';
+export { default as ScheduleForm } from './schedule-form';

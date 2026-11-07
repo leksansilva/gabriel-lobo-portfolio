@@ -1,0 +1,137 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-jost);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-heading: var(--font-cormorant);
+  --color-forest: #1f3a2e;
+  --color-ivory: #f6f2ea;
+  --color-gold: #b89b5e;
+  --color-bronze: #6f5628;
+  --color-charcoal: #1b1f1d;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --header-height: 72px;
+
+  --background: #f6f2ea;
+  --foreground: #1b1f1d;
+  --card: #fbf9f4;
+  --card-foreground: #1b1f1d;
+  --popover: #fbf9f4;
+  --popover-foreground: #1b1f1d;
+  --primary: #1f3a2e;
+  --primary-foreground: #f6f2ea;
+  --secondary: #ebe4d5;
+  --secondary-foreground: #1f3a2e;
+  --muted: #ede7da;
+  --muted-foreground: #55605a;
+  --accent: #b89b5e;
+  --accent-foreground: #1b1f1d;
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: #e1d8c5;
+  --input: #e1d8c5;
+  --ring: #b89b5e;
+  --chart-1: #1f3a2e;
+  --chart-2: #b89b5e;
+  --chart-3: #6f5628;
+  --chart-4: #55605a;
+  --chart-5: #1b1f1d;
+  --radius: 0.75rem;
+  --sidebar: #fbf9f4;
+  --sidebar-foreground: #1b1f1d;
+  --sidebar-primary: #1f3a2e;
+  --sidebar-primary-foreground: #f6f2ea;
+  --sidebar-accent: #ede7da;
+  --sidebar-accent-foreground: #1f3a2e;
+  --sidebar-border: #e1d8c5;
+  --sidebar-ring: #b89b5e;
+}
+
+.dark {
+  --background: #152a21;
+  --foreground: #f6f2ea;
+  --card: #1f3a2e;
+  --card-foreground: #f6f2ea;
+  --popover: #1f3a2e;
+  --popover-foreground: #f6f2ea;
+  --primary: #f6f2ea;
+  --primary-foreground: #1f3a2e;
+  --secondary: #26443a;
+  --secondary-foreground: #f6f2ea;
+  --muted: #26443a;
+  --muted-foreground: #c9c2b4;
+  --accent: #b89b5e;
+  --accent-foreground: #1b1f1d;
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: rgb(246 242 234 / 12%);
+  --input: rgb(246 242 234 / 16%);
+  --ring: #b89b5e;
+  --sidebar: #1f3a2e;
+  --sidebar-foreground: #f6f2ea;
+  --sidebar-primary: #f6f2ea;
+  --sidebar-primary-foreground: #1f3a2e;
+  --sidebar-accent: #26443a;
+  --sidebar-accent-foreground: #f6f2ea;
+  --sidebar-border: rgb(246 242 234 / 12%);
+  --sidebar-ring: #b89b5e;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply scroll-smooth font-sans;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-heading font-medium tracking-tight;
+  }
+}
